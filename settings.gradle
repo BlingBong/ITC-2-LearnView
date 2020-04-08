@@ -1,0 +1,2 @@
+rootProject.name='View_Task_ITC'
+include ':app'

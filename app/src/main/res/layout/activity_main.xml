@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#000000" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ww"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="OoWee"
+                android:textSize="50sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="cursive"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name :"
+                android:textSize="30sp"
+                android:textColor="#FF6D00"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#50FFFFFF"
+                android:textColor="#FFFFFF"
+                android:background="#191919"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:hint="(enter your full name here)"
+                android:inputType="text"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password :"
+                android:textSize="30sp"
+                android:textColor="#64DD17"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/et_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#50FFFFFF"
+                android:textColor="#FFFFFF"
+                android:background="#191919"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:hint="(enter your password here)"
+                android:inputType="textPassword"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number :"
+                android:textSize="30sp"
+                android:textColor="#2962FF"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#50FFFFFF"
+                android:textColor="#FFFFFF"
+                android:background="#191919"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:hint="(enter your phone number here)"
+                android:inputType="number"
+                android:maxLength="13"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Software Type :"
+                android:textSize="30sp"
+                android:textColor="#FFD600"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:singleLine="true"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#191919"
+                android:padding="5dp"
+                android:layout_marginLeft="10dp">
+
+                <RadioButton
+                    android:id="@+id/rb_free"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Free Trial 30 Days"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="italic|bold"/>
+
+                <RadioButton
+                    android:id="@+id/rb_bronze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bronze ($10/month)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="italic|bold"
+                    android:layout_marginTop="1dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_silver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silver ($25/month)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="italic|bold"
+                    android:layout_marginTop="1dp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_gold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gold ($50/month)"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="italic|bold"
+                    android:layout_marginTop="1dp"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_license"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Software License Agreement:"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#D50000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/tv_descriptiontext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:text="          This Limited Use Software License Agreement is a legal agreement between you, the end-user, and BlingBlong, LLC for the use of the The OoWee software product. By using this software or storing this program on a computer hard drive (or other media), you are agreeing to be bound by the terms of this Agreement. If you do not agree to the terms of this Agreement, and you have registered this software, promptly return the software and the accompanying items (including any written materials), along with your receipt for a full refund; or delete the software from all storage media. You may install this program to test and evaluate if it suits your needs and you wish to purchase it.  There is not a set limit for the evaluation time. This software may be distributed freely on online services, bulletin boards, or other electronic media as long as the files are distributed in their entirety.  This software may not be distributed on CD-ROM, disk, or other physical media for a fee without the permission of BlingBlong, LLC. You may not alter this software in any way, including changing or removing any messages or windows. You may not decompile, reverse engineer, disassemble or otherwise reduce this software to a human perceivable form.  You may not modify, rent or resell for profit this software, or create derivative works based upon this software. You may not publicize or distribute any registration code algorithms, information, or registration codes used by this software without permission of BlingBlong, LLC. You may not use any registration codes for the Software that have not been purchased from BlingBlong or an authorized representative of BlingBlong. Software subscription divided by 3 type : Bronze, Silver, And Gold. Bronze has the same tools and access with the Free type; Silver gives you more tools and accesibility on the software; Gold provide an extreme data protection for the big party users."
+                android:textColor="#FFFFFF"
+                android:background="#191919"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:justificationMode="inter_word" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:background="#7E0000"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right">
+
+                    <ImageButton
+                        android:id="@+id/btn_more"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/description_text"
+                        android:background="@drawable/ic_expand_more_black_24dp"
+                        android:clickable="true" />
+
+
+                    <ImageButton
+                        android:id="@+id/btn_less"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/description_text"
+                        android:background="@drawable/ic_expand_less_black_24dp"
+                        android:clickable="true"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cb_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree with the license."
+                android:textSize="15sp"
+                android:background="#191919"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="10dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp">
+
+            <Button
+                android:id="@+id/btn_install"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button"
+                android:textColor="#FFFFFF"
+                android:text="SUBMIT AND INSTALL"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="monospace"
+                android:padding="5dp"
+                android:layout_margin="20dp" />
+
+            <Button
+                android:id="@+id/btn_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/btn_install"
+                android:background="@drawable/button"
+                android:textColor="#FFFFFF"
+                android:text="CLOSE"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:fontFamily="monospace"
+                android:padding="5dp"
+                android:layout_margin="20dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All rights to BlingBlong, LLC"
+                android:textColor="#50FFFFFF"
+                android:textSize="10sp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
